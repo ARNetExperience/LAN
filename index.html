@@ -196,7 +196,7 @@
       animation-timing-function: linear;
     }
 
-    
+
 
     #model2,
     #model22 {
@@ -269,7 +269,7 @@
       margin-left: 76%;
       position: absolute;
       margin-top: -40%;
-    
+
       /* 
       animation-iteration-count: 1;
       animation-timing-function: linear; */
@@ -857,8 +857,7 @@
 
 
     <model-viewer src="packet send.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
-      tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="model1"
-      style="width: 5%;z-index: 3;">
+      tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="model1" style="width: 5%;z-index: 3;">
       <button class="Hotspot packet-button btn btn-sm" slot="hotspot-2"
         data-position="-0.003848217995850542m -0.14425149508449575m 0.15079345864210944m"
         data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible" data-bs-toggle="modal"
@@ -891,8 +890,7 @@
 
 
     <model-viewer src="packet send.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
-      tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="model12"
-      style="width: 5%;z-index: 3;">
+      tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="model12" style="width: 5%;z-index: 3;">
       <button class="Hotspot packet-button btn btn-sm" slot="hotspot-2"
         data-position="-0.003848217995850542m -0.14425149508449575m 0.15079345864210944m"
         data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible" data-bs-toggle="modal"
@@ -984,8 +982,7 @@
     </div>
 
     <model-viewer src="packet send.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
-      tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="model3"
-      style="z-index: 3;">
+      tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="model3" style="z-index: 3;">
       <button class="Hotspot packet-button btn btn-sm" slot="hotspot-2"
         data-position="-0.003848217995850542m -0.14425149508449575m 0.15079345864210944m"
         data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible" data-bs-toggle="modal"
@@ -1016,8 +1013,7 @@
 
 
     <model-viewer src="packet send.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
-      tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="model33"
-      style="z-index: 3;">
+      tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="model33" style="z-index: 3;">
       <button class="Hotspot packet-button btn btn-sm" slot="hotspot-2"
         data-position="-0.003848217995850542m -0.14425149508449575m 0.15079345864210944m"
         data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible" data-bs-toggle="modal"
@@ -1213,6 +1209,16 @@
     </footer>
 
     <script>
+
+
+
+      window.onload = function () {
+        setTimeout(function () {
+          alert("Now, you can click on PC-1, PC-2, or PC-3 to open the Command Prompt and send packet using the respective PC's IP address.\n\nTo know about PC's IP address click PC's button and copy IP address\n\nEnter 'ping ip_address' in command prompt to send packet.\n\nThe ping command is a network utility tool used to test the reachability of a host on an Internet Protocol (IP) network. When you ping a host, your computer sends a small packet of data to the host and waits for a response.");
+        }, 5000);
+      };
+
+
       // JavaScript for changing images
       document.addEventListener("DOMContentLoaded", function () {
         let currentIndex = 1; // Index of the current image
@@ -1364,7 +1370,7 @@
 
       function getUserInputCmdPc3() {
 
-        
+
         var input3 = document.getElementById('inputCmd3').value.trim();
         var outputDiv3 = document.getElementById('output3');
 
@@ -1509,7 +1515,7 @@
           // Remove the classes after the animations are completed (adjust the time accordingly)
           setTimeout(function () {
 
-            alert('Pinged PC having IP Address 192.168.11.1')
+            alert('Pinged PC having IP Address 192.168.11.1. This way LAN works.')
 
 
 
@@ -1549,7 +1555,7 @@
 
           setTimeout(function () {
 
-            alert('Pinged PC having IP Address 192.168.11.3')
+            alert('Pinged PC having IP Address 192.168.11.3. This way LAN works.')
 
 
             modelViewer12.classList.remove('moveLeft4');
@@ -1622,7 +1628,7 @@
 
 
 
-            alert('Pinged PC having IP Address 192.168.11.2');
+            alert('Pinged PC having IP Address 192.168.11.2. This way LAN works.');
 
 
             modelViewer.classList.remove('moveRight');
@@ -1657,7 +1663,7 @@
 
           setTimeout(function () {
 
-            alert('Pinged PC having IP Address 192.168.11.3')
+            alert('Pinged PC having IP Address 192.168.11.3. This way LAN works.')
 
             modelViewer12.classList.remove('moveFromRight1')
             modelViewer12.style.display = 'none';
