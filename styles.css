@@ -938,7 +938,7 @@ h3 {
     padding: 0.8rem 0;
     font-size: 3rem;
     color: rgb(0, 0, 0);
-    background: rgb(202, 127, 255);
+    background: rgb(186, 187, 250);
     font-family: Georgia, 'Times New Roman', Times, serif;
   }
   
@@ -946,7 +946,7 @@ h3 {
     margin: 3rem auto;
     width: 90vw;
     padding: 2rem;
-    background: rgb(202, 127, 255);
+    background: rgb(186, 187, 250);
     cursor: default;
     border-radius: 1rem;
     color: #000000;
@@ -1005,13 +1005,13 @@ h3 {
   
   
   button:active {
-    background: rgb(202, 127, 255);
+    background: rgb(186, 187, 250);
   }
   
   #scoreboard,
   #answerBank {
     width: 50rem;
-    background: rgb(202, 127, 255);
+    background: rgb(186, 187, 250);
     padding: 2rem;
     text-align: center;
     margin: auto;

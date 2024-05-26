@@ -1,31 +1,31 @@
-//Question bank
 var questionBank= [
     {
-        question : 'What does ARP stand for?',
-        option : ['Address Resolution Protocol','Advanced Routing Protocol',' Automated Routing Protocol','Address Retrieval Protocol'],
-        answer : 'Address Resolution Protocol'
+        question : 'What does LAN stand for?',
+        option : ['Local Area Network','Large Area Network','Logical Area Network','Limited Area Network'],
+        answer : 'Local Area Network'
     },
     {
-        question : 'Which layer of the OSI model does ARP primarily operate on?',
-        option : ['Application layer',' Transport layer','Network layer','Data link layer'],
-        answer : 'Data link layer'
+        question : 'Which device is used to connect multiple computers within a LAN?',
+        option : ['Router','Switch','Modem','Repeater'],
+        answer : 'Switch'
     },
     {
-        question : 'What is the main purpose of ARP?',
-        option : ['To translate domain names to IP addresses','To discover the MAC address of a device on the same network given its IP address','To establish secure connections between devices','To manage network congestion'],
-        answer : 'To discover the MAC address of a device on the same network given its IP address'
+        question : 'What is the primary benefit of a LAN?',
+        option : ['Long-distance communication','High-speed data transfer within a small area','Secure connections over the internet','Wireless communication'],
+        answer : 'High-speed data transfer within a small area'
     },
     {
-        question : 'Which command can be used to view the ARP cache in most operating systems?',
-        option : ['arpconfig','ifconfig','arp -a','ipconfig /all'],
-        answer : 'arp -a'
+        question : 'Which protocol is commonly used for file sharing within a LAN?',
+        option : ['FTP','SMTP','SMB','HTTP'],
+        answer : 'SMB'
     },
     {
-        question : 'How does ARP resolve IP addresses to MAC addresses?',
-        option : [' By sending ARP Requests','By querying the DNS server','By broadcasting ARP Responses',' By using ICMP packets'],
-        answer : ' By sending ARP Requests'
+        question : 'What is a common topology used in LANs?',
+        option : ['Star','Ring','Mesh','Bus'],
+        answer : 'Star'
     }
-]
+];
+
 
 var question= document.getElementById('question');
 var quizContainer= document.getElementById('quiz-container');

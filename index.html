@@ -165,15 +165,15 @@
       }
 
       25% {
-        transform: translateX(710%) translateY(0%);
+        transform: translateX(550%) translateY(0%);
       }
 
       50% {
-        transform: translateX(710%) translateY(100%);
+        transform: translateX(550%) translateY(100%);
       }
 
       75% {
-        transform: translateX(710%) translateY(0%);
+        transform: translateX(550%) translateY(0%);
       }
 
       100% {
@@ -187,14 +187,16 @@
     #model12 {
       width: 5%;
       z-index: 1;
-      margin-top: -51%;
-      margin-left: 10%;
+      margin-top: -41%;
+      margin-left: 17%;
       display: none;
       position: absolute;
 
       animation-iteration-count: 1;
       animation-timing-function: linear;
     }
+
+    
 
     #model2,
     #model22 {
@@ -203,7 +205,7 @@
       z-index: 1;
       margin-left: 44.6%;
       position: absolute;
-      margin-top: -30%;
+      margin-top: -22%;
       /* 
       animation-iteration-count: 1;
       animation-timing-function: linear; */
@@ -266,6 +268,8 @@
       z-index: 1;
       margin-left: 76%;
       position: absolute;
+      margin-top: -40%;
+    
       /* 
       animation-iteration-count: 1;
       animation-timing-function: linear; */
@@ -393,15 +397,15 @@
       }
 
       25% {
-        transform: translateX(-600%);
+        transform: translateX(-630%);
       }
 
       50% {
-        transform: translateX(-600%) translateY(100%);
+        transform: translateX(-630%) translateY(100%);
       }
 
       75% {
-        transform: translateX(-600%) translateY(0%);
+        transform: translateX(-630%) translateY(0%);
       }
 
       100% {
@@ -774,8 +778,8 @@
             <span class="text-success" id="copyTextMessage2"></span>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#pc2CMD"
-              onclick="getUserInputCmdPc2()">Open Command Prompt</button>
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#PC-2CMD">Open Command
+              Prompt</button>
             <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Okay</button>
 
           </div>
@@ -798,8 +802,7 @@
             <span class="text-danger" id="copyTextMessage3"></span>
           </div>
           <div class="modal-footer">
-            <button type="button" onclick="getUserInputCmdPc3()" class="btn btn-dark" data-bs-toggle="modal"
-              data-bs-target="#pc3Cmd">Open Command
+            <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#PC-3CMD">Open Command
               Prompt</button>
             <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Okay</button>
 
@@ -855,7 +858,7 @@
 
     <model-viewer src="packet send.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
       tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="model1"
-      style="width: 5%;z-index: 3;margin-left: 10%;">
+      style="width: 5%;z-index: 3;">
       <button class="Hotspot packet-button btn btn-sm" slot="hotspot-2"
         data-position="-0.003848217995850542m -0.14425149508449575m 0.15079345864210944m"
         data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible" data-bs-toggle="modal"
@@ -889,7 +892,7 @@
 
     <model-viewer src="packet send.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
       tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="model12"
-      style="width: 5%;z-index: 3;margin-left: 10%;">
+      style="width: 5%;z-index: 3;">
       <button class="Hotspot packet-button btn btn-sm" slot="hotspot-2"
         data-position="-0.003848217995850542m -0.14425149508449575m 0.15079345864210944m"
         data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible" data-bs-toggle="modal"
@@ -982,7 +985,7 @@
 
     <model-viewer src="packet send.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
       tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="model3"
-      style="margin-top: -50%;z-index: 3;">
+      style="z-index: 3;">
       <button class="Hotspot packet-button btn btn-sm" slot="hotspot-2"
         data-position="-0.003848217995850542m -0.14425149508449575m 0.15079345864210944m"
         data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible" data-bs-toggle="modal"
@@ -1014,7 +1017,7 @@
 
     <model-viewer src="packet send.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
       tone-mapping="commerce" poster="poster.webp" shadow-intensity="1" id="model33"
-      style="margin-top: -50%;z-index: 3;">
+      style="z-index: 3;">
       <button class="Hotspot packet-button btn btn-sm" slot="hotspot-2"
         data-position="-0.003848217995850542m -0.14425149508449575m 0.15079345864210944m"
         data-normal="0m -2.220446049250313e-16m 1m" data-visibility-attribute="visible" data-bs-toggle="modal"
@@ -1092,12 +1095,12 @@
           </div>
           <div class="modal-body">
             <div class="console">
-              <div class="output" id="output3">
+              <div class="output" id="output2">
                 PC 2 Command Line 1.0
               </div>
               <div class="input">
-                <input type="text" id="inputCmd3" placeholder="Type your command here...">
-                <button onclick="executeCommand3()" class="btn btn-primary btn-lg">Enter</button>
+                <input type="text" id="inputCmd2" placeholder="Type your command here...">
+                <button onclick="getUserInputCmdPc2()" class="btn btn-primary btn-lg">Enter</button>
               </div>
             </div>
 
@@ -1117,18 +1120,18 @@
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">PC-1 Command Prompt
+            <h1 class="modal-title fs-5 text-black" id="exampleModalLabel">PC-3 Command Prompt
             </h1>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
             <div class="console">
               <div class="output" id="output3">
-                PC 1 Command Line 1.0
+                PC 3 Command Line 1.0
               </div>
               <div class="input">
                 <input type="text" id="inputCmd3" placeholder="Type your command here...">
-                <button onclick="executeCommand3()" class="btn btn-primary btn-lg">Enter</button>
+                <button onclick="getUserInputCmdPc3()" class="btn btn-primary btn-lg">Enter</button>
               </div>
             </div>
 
@@ -1360,76 +1363,52 @@
       }
 
       function getUserInputCmdPc3() {
-        // Check if the table has data
-        var tableRows = document.querySelectorAll("PC3Table tbody tr");
 
-        // Prompt user for input
-        var userInput = prompt("PC-3 Command Prompt\nSome LAN Commands are 'LAN -a', 'ping ip_address'\nEnter something:");
+        
+        var input3 = document.getElementById('inputCmd3').value.trim();
+        var outputDiv3 = document.getElementById('output3');
+
+        if (input3 === '') {
+          outputDiv3.innerHTML += '<p>>Please enter a command.</p>';
+          return;
+        }
 
 
         // Check if user clicked "OK" and entered some text
-        if (userInput == 'ping 192.168.11.1') {
+        if (input3 == 'ping 192.168.11.1') {
+
+          outputDiv3.innerHTML += '<p>>ping 192.168.11.1</p>';
+          outputDiv3.innerHTML += '<p>Pinging 192.168.11.1 with 32 bytes of data:<br></p>';
+
+          outputDiv3.innerHTML += '<p>Reply from 192.168.11.1: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.1: bytes=32 time<1ms TTL=127<br>Reply from 192.168.11.1: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.1: bytes=32 time<1ms TTL=127</p>';
+
+          outputDiv3.innerHTML += '<p>Ping statistics for 192.168.11.1:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+
+
           // Show the models by setting display to block
           var modelViewer = document.getElementById('model2');
-          var modelViewer12 = document.getElementById('model22');
 
           modelViewer.style.display = 'block';
-          modelViewer12.style.display = 'block';
 
-          // Add class to start the animation for model1
           modelViewer.classList.add('moveUp2');
 
-          // Add classes to start the animations for model12
-          modelViewer12.classList.add('moveUp22');
+
 
           // Remove the classes after the animations are completed (adjust the time accordingly)
           setTimeout(function () {
-            //modelViewer.classList.remove('moveUp2');
-            //modelViewer.style.display = 'none';
-            alert('Got Mac Address of PC having IP Address 192.168.11.1')
+
+            alert('Pinged PC having IP Address 192.168.11.1')
 
 
-            // Adding a new row to the table
-            var table = document.getElementById('PC3Table').getElementsByTagName('tbody')[0];
-            var newRow = table.insertRow(table.rows.length);
-
-            // You can customize the content of the new row as needed
-            var cell1 = newRow.insertCell(0);
-            var cell2 = newRow.insertCell(1);
-            var cell3 = newRow.insertCell(2);
-
-            cell1.innerHTML = '192.168.11.1'; // Replace with the actual IP address
-            cell2.innerHTML = '0001.613C.21A6'; // Replace with the actual hardware address
-            cell3.innerHTML = 'Fast Ethernet 0/1'; // Replace with the actual interface
 
 
             modelViewer.classList.remove('moveUp2');
             modelViewer.style.display = 'none';
-            modelViewer12.classList.remove('moveUp22');
-            modelViewer12.style.display = 'none';
 
           }, 20000); // 20 seconds, adjust as needed
 
-          setTimeout(function () {
-            //modelViewer12.classList.remove('moveUp2');
-            //modelViewer12.style.display = 'none';
 
-            // Adding a new row to the table
-            var table = document.getElementById('PC1Table').getElementsByTagName('tbody')[0];
-            var newRow = table.insertRow(table.rows.length);
-
-            // You can customize the content of the new row as needed
-            var cell1 = newRow.insertCell(0);
-            var cell2 = newRow.insertCell(1);
-            var cell3 = newRow.insertCell(2);
-
-            cell1.innerHTML = '192.168.11.3'; // Replace with the actual IP address
-            cell2.innerHTML = '0006.2A46.1507'; // Replace with the actual hardware address
-            cell3.innerHTML = 'Fast Ethernet 0/1'; // Replace with the actual interface
-
-
-
-          }, 10000); // 20 seconds, adjust as needed
 
 
 
@@ -1438,69 +1417,40 @@
 
 
         // Check if user clicked "OK" and entered some text
-        if (userInput == 'ping 192.168.11.2') {
-          // Show the models by setting display to block
-          var modelViewer = document.getElementById('model2');
+        if (input3 == 'ping 192.168.11.2') {
+
+
+          outputDiv3.innerHTML += '<p>>ping 192.168.11.2</p>';
+          outputDiv3.innerHTML += '<p>Pinging 192.168.11.2 with 32 bytes of data:<br></p>';
+
+          outputDiv3.innerHTML += '<p>Reply from 192.168.11.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time<1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time<1ms TTL=127</p>';
+
+          outputDiv3.innerHTML += '<p>Ping statistics for 192.168.11.2:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+
           var modelViewer12 = document.getElementById('model22');
 
-          modelViewer.style.display = 'block';
+
           modelViewer12.style.display = 'block';
 
-          // Add class to start the animation for model1
-          modelViewer.classList.add('moveUp3');
 
           // Add classes to start the animations for model12
-          modelViewer12.classList.add('moveUp33');
+          modelViewer12.classList.add('moveUp3');
 
           // Remove the classes after the animations are completed (adjust the time accordingly)
           setTimeout(function () {
             // modelViewer.classList.remove('moveUp3');
             // modelViewer.style.display = 'none';
-            alert('Got Mac Address of PC having IP Address 192.168.11.2')
+            alert('Pinged PC having IP Address 192.168.11.2')
 
 
-            // Adding a new row to the table
-            var table = document.getElementById('PC3Table').getElementsByTagName('tbody')[0];
-            var newRow = table.insertRow(table.rows.length);
 
-            // You can customize the content of the new row as needed
-            var cell1 = newRow.insertCell(0);
-            var cell2 = newRow.insertCell(1);
-            var cell3 = newRow.insertCell(2);
 
-            cell1.innerHTML = '192.168.11.2'; // Replace with the actual IP address
-            cell2.innerHTML = '0030.A333.03CB'; // Replace with the actual hardware address
-            cell3.innerHTML = 'Fast Ethernet 0/1'; // Replace with the actual interface
-
-            modelViewer.classList.remove('moveUp3');
-            modelViewer.style.display = 'none';
-            modelViewer12.classList.remove('moveUp33');
+            modelViewer12.classList.remove('moveUp3');
             modelViewer12.style.display = 'none';
 
 
-          }, 20000); // 20 seconds, adjust as needed
-
-          setTimeout(function () {
-            //modelViewer12.classList.remove('moveUp2');
-            //modelViewer12.style.display = 'none';
-
-            // Adding a new row to the table
-            var table = document.getElementById('PC2Table').getElementsByTagName('tbody')[0];
-            var newRow = table.insertRow(table.rows.length);
-
-            // You can customize the content of the new row as needed
-            var cell1 = newRow.insertCell(0);
-            var cell2 = newRow.insertCell(1);
-            var cell3 = newRow.insertCell(2);
-
-            cell1.innerHTML = '192.168.11.3'; // Replace with the actual IP address
-            cell2.innerHTML = '0006.2A46.1507'; // Replace with the actual hardware address
-            cell3.innerHTML = 'Fast Ethernet 0/1'; // Replace with the actual interface
-
-
-
-
-          }, 10000); // 20 seconds, adjust as needed
+          }, 20000);
 
 
 
@@ -1510,150 +1460,104 @@
 
 
 
+        // Clear input field after command execution
+        document.getElementById('inputCmd3').value = '';
+
+        // Scroll to the bottom after a slight delay
+        setTimeout(function () {
+          var outputDiv3 = document.getElementById('output3');
+          outputDiv3.scrollTop = outputDiv3.scrollHeight;
+        }, 50);
 
 
 
-       
       }
 
 
       function getUserInputCmdPc2() {
-        // Check if the table has data
-        var tableRows = document.querySelectorAll("PC2Table tbody tr");
-
-        // Prompt user for input
-        var userInput = prompt("PC-2 Command Prompt\nSome LAN Commands are 'LAN -a', 'ping ip_address'\nEnter something:");
 
 
+
+        var input2 = document.getElementById('inputCmd2').value.trim();
+        var outputDiv2 = document.getElementById('output2');
+
+        if (input2 === '') {
+          outputDiv2.innerHTML += '<p>>Please enter a command.</p>';
+          return;
+        }
 
         // Check if user clicked "OK" and entered some text
-        if (userInput == 'ping 192.168.11.1') {
-          // Show the models by setting display to block
+        if (input2 == 'ping 192.168.11.1') {
+
+          outputDiv2.innerHTML += '<p>>ping 192.168.11.1</p>';
+          outputDiv2.innerHTML += '<p>Pinging 192.168.11.1 with 32 bytes of data:<br></p>';
+
+          outputDiv2.innerHTML += '<p>Reply from 192.168.11.1: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.1: bytes=32 time<1ms TTL=127<br>Reply from 192.168.11.1: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.1: bytes=32 time<1ms TTL=127</p>';
+
+          outputDiv2.innerHTML += '<p>Ping statistics for 192.168.11.1:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+
+
+
           var modelViewer = document.getElementById('model3');
-          var modelViewer12 = document.getElementById('model33');
 
           modelViewer.style.display = 'block';
-          modelViewer12.style.display = 'block';
 
-          // Add class to start the animation for model1
           modelViewer.classList.add('moveLeft3');
 
-          // Add classes to start the animations for model12
-          modelViewer12.classList.add('moveLeft33');
 
           // Remove the classes after the animations are completed (adjust the time accordingly)
           setTimeout(function () {
 
-            alert('Got Mac Address of PC having IP Address 192.168.11.1')
+            alert('Pinged PC having IP Address 192.168.11.1')
 
 
-            // Adding a new row to the table
-            var table = document.getElementById('PC2Table').getElementsByTagName('tbody')[0];
-            var newRow = table.insertRow(table.rows.length);
-
-            // You can customize the content of the new row as needed
-            var cell1 = newRow.insertCell(0);
-            var cell2 = newRow.insertCell(1);
-            var cell3 = newRow.insertCell(2);
-
-            cell1.innerHTML = '192.168.11.1'; // Replace with the actual IP address
-            cell2.innerHTML = '0001.613C.21A6'; // Replace with the actual hardware address
-            cell3.innerHTML = 'Fast Ethernet 0/1'; // Replace with the actual interface
 
             modelViewer.classList.remove('moveLeft3');
             modelViewer.style.display = 'none';
-            modelViewer12.classList.remove('moveLeft33');
-            modelViewer12.style.display = 'none';
 
 
           }, 20000); // 20 seconds, adjust as needed
 
-          setTimeout(function () {
 
-
-            // Adding a new row to the table
-            var table = document.getElementById('PC1Table').getElementsByTagName('tbody')[0];
-            var newRow = table.insertRow(table.rows.length);
-
-            // You can customize the content of the new row as needed
-            var cell1 = newRow.insertCell(0);
-            var cell2 = newRow.insertCell(1);
-            var cell3 = newRow.insertCell(2);
-
-            cell1.innerHTML = '192.168.11.2'; // Replace with the actual IP address
-            cell2.innerHTML = '0030.A333.03CB'; // Replace with the actual hardware address
-            cell3.innerHTML = 'Fast Ethernet 0/1'; // Replace with the actual interface
-
-
-
-
-          }, 10000); // 20 seconds, adjust as needed
 
 
         }
 
         // Check if user clicked "OK" and entered some text
-        if (userInput == 'ping 192.168.11.3') {
-          // Show the models by setting display to block
-          var modelViewer = document.getElementById('model3');
+        if (input2 == 'ping 192.168.11.3') {
+
+          outputDiv2.innerHTML += '<p>>ping 192.168.11.3</p>';
+          outputDiv2.innerHTML += '<p>Pinging 192.168.11.3 with 32 bytes of data:<br></p>';
+
+          outputDiv2.innerHTML += '<p>Reply from 192.168.11.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time<1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time<1ms TTL=127</p>';
+
+          outputDiv2.innerHTML += '<p>Ping statistics for 192.168.11.3:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+
+
+
           var modelViewer12 = document.getElementById('model33');
 
-          modelViewer.style.display = 'block';
+
           modelViewer12.style.display = 'block';
 
-          // Add class to start the animation for model1
-          modelViewer.classList.add('moveLeft4');
 
-          // Add classes to start the animations for model12
-          modelViewer12.classList.add('moveLeft44');
 
-          // Remove the classes after the animations are completed (adjust the time accordingly)
+
+          modelViewer12.classList.add('moveLeft4');
+
           setTimeout(function () {
 
-            alert('Got Mac Address of PC having IP Address 192.168.11.3')
+            alert('Pinged PC having IP Address 192.168.11.3')
 
 
-            // Adding a new row to the table
-            var table = document.getElementById('PC2Table').getElementsByTagName('tbody')[0];
-            var newRow = table.insertRow(table.rows.length);
-
-            // You can customize the content of the new row as needed
-            var cell1 = newRow.insertCell(0);
-            var cell2 = newRow.insertCell(1);
-            var cell3 = newRow.insertCell(2);
-
-            cell1.innerHTML = '192.168.11.3'; // Replace with the actual IP address
-            cell2.innerHTML = '0006.2A46.1507'; // Replace with the actual hardware address
-            cell3.innerHTML = 'Fast Ethernet 0/1'; // Replace with the actual interface
-
-            modelViewer.classList.remove('moveLeft4');
-            modelViewer.style.display = 'none';
-            modelViewer12.classList.remove('moveLeft44');
+            modelViewer12.classList.remove('moveLeft4');
             modelViewer12.style.display = 'none';
 
 
           }, 20000); // 20 seconds, adjust as needed
 
-          setTimeout(function () {
-
-
-            // Adding a new row to the table
-            var table = document.getElementById('PC3Table').getElementsByTagName('tbody')[0];
-            var newRow = table.insertRow(table.rows.length);
-
-            // You can customize the content of the new row as needed
-            var cell1 = newRow.insertCell(0);
-            var cell2 = newRow.insertCell(1);
-            var cell3 = newRow.insertCell(2);
-
-            cell1.innerHTML = '192.168.11.2'; // Replace with the actual IP address
-            cell2.innerHTML = '0030.A333.03CB'; // Replace with the actual hardware address
-            cell3.innerHTML = 'Fast Ethernet 0/1'; // Replace with the actual interface
-
-
-
-
-          }, 10000); // 20 seconds, adjust as needed
 
 
         }
@@ -1661,9 +1565,16 @@
 
 
 
+        // Clear input field after command execution
+        document.getElementById('inputCmd2').value = '';
+
+        // Scroll to the bottom after a slight delay
+        setTimeout(function () {
+          var outputDiv2 = document.getElementById('output2');
+          outputDiv2.scrollTop = outputDiv2.scrollHeight;
+        }, 50);
 
 
-      
 
 
       }
@@ -1683,6 +1594,16 @@
         // Check if user clicked "OK" and entered some text
         if (input1 == 'ping 192.168.11.2') {
           // Show the models by setting display to block
+
+          outputDiv1.innerHTML += '<p>>ping 192.168.11.2</p>';
+          outputDiv1.innerHTML += '<p>Pinging 192.168.11.2 with 32 bytes of data:<br></p>';
+
+          outputDiv1.innerHTML += '<p>Reply from 192.168.11.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time<1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.2: bytes=32 time<1ms TTL=127</p>';
+
+          outputDiv1.innerHTML += '<p>Ping statistics for 192.168.11.2:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
+
+
           var modelViewer = document.getElementById('model1');
 
           modelViewer.style.display = 'block';
@@ -1718,13 +1639,18 @@
         }
 
         // Check if user clicked "OK" and entered some text
-        if (userInput == 'ping 192.168.11.3') {
+        if (input1 == 'ping 192.168.11.3') {
+
+          outputDiv1.innerHTML += '<p>>ping 192.168.11.3</p>';
+          outputDiv1.innerHTML += '<p>Pinging 192.168.11.3 with 32 bytes of data:<br></p>';
+
+          outputDiv1.innerHTML += '<p>Reply from 192.168.11.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time<1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time=1ms TTL=127<br>Reply from 192.168.11.3: bytes=32 time<1ms TTL=127</p>';
+
+          outputDiv1.innerHTML += '<p>Ping statistics for 192.168.11.3:<br>&ensp;Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),<br>Approximate round trip times in milli-seconds:<br>Minimum = 0ms, Maximum = 1ms, Average = 0ms</p>';
+
           var modelViewer12 = document.getElementById('model12');
 
-
           modelViewer12.style.display = 'block';
-
-
 
           // Add classes to start the animations for model12
           modelViewer12.classList.add('moveFromRight1');
@@ -1732,10 +1658,6 @@
           setTimeout(function () {
 
             alert('Pinged PC having IP Address 192.168.11.3')
-
-
-
-
 
             modelViewer12.classList.remove('moveFromRight1')
             modelViewer12.style.display = 'none';
@@ -1747,7 +1669,14 @@
 
         }
 
+        // Clear input field after command execution
+        document.getElementById('inputCmd1').value = '';
 
+        // Scroll to the bottom after a slight delay
+        setTimeout(function () {
+          var outputDiv1 = document.getElementById('output1');
+          outputDiv1.scrollTop = outputDiv1.scrollHeight;
+        }, 50);
 
 
 
